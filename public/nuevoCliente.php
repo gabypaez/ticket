@@ -92,7 +92,7 @@ $mail->addAddress($correo, $nombre);     //Add a recipient
 //Content
 $mail->isHTML(true);                                  //Set email format to HTML
 $mail->Subject = 'Inscripcion';
-$mail->Body    = 'Holaa!! Muchas Gracias por realizar su inscripcion, por favor descargue su Ticket</b>  <a href="http://ticket/generar_entrada_mail.php?dni='.$encrypted_string.'>">Descargar ticket</a>';
+$mail->Body    = 'Holaa!! Muchas Gracias por realizar su inscripcion, por favor descargue su Ticket</b>  <a href="/generar_entrada_mail.php?dni='.$encrypted_string.'>">Descargar ticket</a>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 $mail->send();
